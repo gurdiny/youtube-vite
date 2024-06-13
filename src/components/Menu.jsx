@@ -16,11 +16,11 @@ export default function Menu(){
         },
     ]
     return (
-    <aside id="menu">
+    <aside className="col-start-1 col-end-2 row-start-2 row-end-3 pt-4">
             {
                 menuItems.map((items)=>{
                     return (
-                        <div key={`menu-items-${items.Text}`} className="menu-items" >
+                        <div key={`menu-items-${items.Text}`} className="p-4 rounded-xl flex gap-2 items-center hover:bg-[#282828] hover:p-4 hover:rounded-[10px]" >
                              <span>
                                 {items.icon}
                              </span>
